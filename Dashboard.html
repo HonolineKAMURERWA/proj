@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <h1>Our Family Dashboard</h1>
+</header>
+<body>
+    <nav>
+        <ul class="menu">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Who we are.html">Who we are</a></li>
+            <li><a href="FAQs.html">FAQs</a></li>
+            <li><a href="Our Gallery.html">Our Gallery</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+            <li><a href="Dashboard.html">Dashboard</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Appointment.html">Appointment</a></li>
+            <li><a href="sign up.html">Sign up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+        <style>
+ *{
+margin: 0;
+padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+nav {
+    background-color: #363333;
+    padding: 10px 0;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #4CAF50;
+    transition: 0.5s;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+    
+            header {
+                background-color: #333;
+                color: white;
+                padding: 1em;
+                text-align: center;
+            }
+    
+            .container {
+                display: flex;
+                justify-content: space-between;
+                padding: 1em;
+                margin-left: 40%;
+                font-size: 30px;
+            }
+    
+            #event-form {
+                max-width: 800px;
+                margin-right: 1em;
+            }
+    
+            #calendar {
+                flex-grow: 1;
+                font-size: 300xp;
+            }
+    
+            #event-list {
+                list-style-type: none;
+                padding: 0;
+                margin-left: 30%;
+
+            }
+    
+            .event {
+                margin-bottom: 1em;
+                padding: 0.5em;
+                background-color: #f4f4f4;
+                border-radius: 5px;
+            }
+            button{
+                width: 200px;
+                height: 40px;
+                font-size: 20px;
+                border-radius: 40px;
+            }
+
+            label {
+              display: block;
+             margin-bottom: 5px;
+             }
+            input{
+                width: 100%;
+               padding: 10px;
+               margin-bottom: 15px;
+               border: 1px solid #ccc;
+               border-radius: 3px;
+ 
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Event Dashboard</h1>
+        </header>
+    
+        <div class="container">
+            <div id="event-form">
+                <h4>Add event</h4>
+                <form id="add-event-form">
+                    <!-- <label for="event-name">Event Name:</label><br> -->
+                    <input type="text" id="event-name" required>
+                    <h4> Event name</h4>
+    
+                    <!-- <label for="event-date">Event Date:</label><br> -->
+                    <input type="date" id="event-date" required>
+                    <h4>Event date</h4><br>
+    
+                    <button type="button" onclick="addEvent()">Add Event</button>
+                </form>
+            <!-- </div> -->
+    
+            <div id="calendar">
+                <!-- Calendar content goes here -->
+            </div>
+        </div>
+    
+        <div>
+            <h3>Event List</h3>
+            <ul id="event-list"></ul>
+        </div>
+        </div>
+    
+        <script>
+            function addEvent() {
+                const eventName = document.getElementById('event-name').value;
+                const eventDate = document.getElementById('event-date').value;
+    
+                if (eventName && eventDate) {
+                    const eventList = document.getElementById('event-list');
+                    const listItem = document.createElement('li');
+                    listItem.classList.add('event');
+                    listItem.textContent = `${eventName} - ${eventDate}`;
+                    eventList.appendChild(listItem);
+    
+                    // Clear form fields
+                    document.getElementById('event-name').value = '';
+                    document.getElementById('event-date').value = '';
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
+
+   
+
+

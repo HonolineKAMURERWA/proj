@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        *{
+margin: 0;
+padding: 0;
+}
+
+nav {
+    background-color: #363333;
+    padding: 10px 0;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #4CAF50;
+    transition: 0.5s;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 25px;
+            margin-left: 20%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            margin-bottom: 0.5em;
+        }
+
+        input, select {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #786969;
+            color: white;
+            padding: 0.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .section h2{
+            margin-left: 20%;
+        }
+        .min button{
+  background-color: rgb(58, 134, 172);
+  color: black;
+  width: 300px;
+  height: 40px;
+  margin-left: 70%;
+  box-shadow: #555;
+}
+@media screen and (max-width:800px) {
+  
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Family Website</h1>
+    </header>
+
+    <section>
+        <h2>Schedule an Appointment</h2>
+        <form>
+            <label for="family-member">Select Family Member:</label>
+            <select id="family-member" required>
+                <option value="parent">Parents</option>
+                <option value="child">Childs</option>
+                <option value="grandparent">Grandparents</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="appointment-date">Appointment Date:</label>
+            <input type="date" id="appointment-date" required>
+
+            <label for="appointment-time">Appointment Time:</label>
+            <input type="time" id="appointment-time" required>
+
+            <button type="button" onclick="scheduleAppointment()">Schedule Appointment</button>
+        </form>
+    </section>
+
+    <script>
+        function scheduleAppointment() {
+            const familyMember = document.getElementById('family-member').value;
+            const appointmentDate = document.getElementById('appointment-date').value;
+            const appointmentTime = document.getElementById('appointment-time').value;
+
+            // You can add further logic to handle the appointment data
+            // For now, let's just log the details
+            console.log(`Appointment scheduled for ${familyMember} on ${appointmentDate} at ${appointmentTime}`);
+        }
+    </script>
+      <div class="min">
+        <button class="Back to Home"><a href="Home.html">Back to Home</a></button> <br><br><br>
+      </div>
+</body>
+</html>

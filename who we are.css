@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #363333;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+.menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #4CAF50;
+    transition: 0.5s;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.need h1{
+    margin-left: 25%;
+    font-size: 50px;
+}
+.need p{
+    margin-left:10%;
+    font-size: 20px;
+    font-style: oblique;
+}
+.need h2{
+    margin-left: 30%;
+}
+.img img{
+    border-radius: 50%;
+
+}
+
+button {
+    width:300px;
+    height: 50px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 40%;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color:rgb(41, 110, 159);
+}
+.not{
+    margin-left: 20%;
+    font-size: 20px;
+}
+.team-page h1 {
+    text-align: center;
+    margin: 30px 0px;
+    color: rgba(116, 144, 117, 255);
+  }
+
+  .team-page {
+    width: 100%;
+    height: 80vh;
+  }
+  .team-page .team-box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+  }
+  .team-page .team-box .profile {
+    color: rgb(167, 142, 142);
+    width: 310px;
+    height: 290px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(116, 144, 117, 255);
+    transition: 0.4s;
+  }
+  .team-page .team-box .profile:hover {
+    border-radius: 20px;
+    height: 320px;
+  }
+  .team-page .team-box .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transform: scale(1.05);
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(116, 144, 117, 255);
+    z-index: 2;
+    transition: 0.4s;
+  }
+  .team-page .team-box .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+  }
+  .team-page .team-box .profile .team-info {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    transition: 0.4s;
+  }
+  .team-page .team-box .profile .team-info .name {
+    margin-bottom: 15px;
+  }
+  .team-page .team-box .profile .team-info .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+  }
+
+  .team-page h1 {
+    text-align: center;
+    margin: 30px 0px;
+    color: rgba(116, 144, 117, 255);
+    font-size: 60px;
+  }
+  .team-page-1 {
+    width: 100%;
+    height: 80vh;
+  }
+  .team-page .team-box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+  }
+  .team-page .team-box .profile {
+    color: rgb(167, 142, 142);
+    width: 310px;
+    height: 290px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(116, 144, 117, 255);
+    transition: 0.4s;
+  }
+  .team-page .team-box .profile:hover {
+    border-radius: 20px;
+    height: 320px;
+  }
+  .team-page .team-box .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    transform: scale(1.05);
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(116, 144, 117, 255);
+    z-index: 2;
+    transition: 0.4s;
+  }
+  .team-page .team-box .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+  }
+  .team-page .team-box .profile .team-info {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    transition: 0.4s;
+  }
+  .team-page .team-box .profile .team-info .name {
+    margin-bottom: 15px;
+  }
+  .team-page .team-box .profile .team-info .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+  }
+
+  .needs{
+    margin-left: 3%;
+    margin-top: -15%;
+    font-size: 18px;
+    background-color: #555 ;
+  }
+  .needs h2{
+    margin-left: 25%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .need h2{
+    color: rgb(80, 149, 149);
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10%;
+    font-size: 50px;
+  }
+  .needs p{
+    margin-left: 3%;
+  }
+
+  .message{
+    margin-top: -8%;
+  }
+  .make{
+    margin-top: -18%;
+  }
+  .media{
+    margin-top: -18%;
+  }
+
+
+  /* styles.css */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.animated-paragraph p{ 
+  animation: fadeIn 8s ease-in-out;
+  font-size: 20px;
+}
+.moving-element--1 h2{
+  margin-left:30% ;
+  
+}
+
+.moving-element--1 {
+  margin-bottom: -300px;
+  font-size: 17px;
+  width: 1000px;
+  height: 40px;
+  background-color: blue;
+  position: absolute;
+  left: 0;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  animation: moveRight 120s linear infinite; /* 4s duration, linear timing function, infinite loop */
+}
+
+@keyframes moveRight {
+  0% {
+      left: 0;
+  }
+  100% {
+      left: calc(100% - 100px); /* Move to 100% of the container width minus the element width */
+  }
+}
+
+
+button a{
+  font-size: 20px;
+  border-radius: 40px;
+}
+.min button{
+  background-color: rgb(58, 134, 172);
+  color: black;
+  width: 300px;
+  height: 40px;
+  margin-left: 70%;
+  box-shadow: #555;
+}
+@media screen and (max-width:800px) {
+  
+}
+
+
+

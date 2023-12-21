@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <h1>Our Family Login</h1>
+</header>
+<body>
+  <nav>
+    <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About us.html">About us</a></li>
+        <li><a href="Who we are.html">Who we are</a></li>
+        <li><a href="FAQs.html">FAQs</a></li>
+        <li><a href="Our Gallery.html">Our Gallery</a></li>
+        <li><a href="contact us.html">Contact us</a></li>
+        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="Blogs.html">Blogs</a></li>
+        <li><a href="Appointment.html">Appointment</a></li>
+        <li><a href="sign up.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">E-mail:</label> <br> 
+            <input type="text" id="e-mail" required> <br> 
+            <label for="email">Username:</label> <br> 
+            <input type="text" id="username" required> <br>
+
+            <label for="password">Password:</label> <br> 
+            <input type="password" id="password" required> <br> <br>
+
+            <button type="submit">Login</button> <br>
+        </form>
+        <p id="message"></p> <br>
+    </div>
+
+    <script src="script.js">
+      document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "admin" && password === "admin") {
+        document.getElementById("message").innerText = "Login successful!";
+    } else {
+        document.getElementById("message").innerText = "Invalid username or password.";
+    }
+});
+  </script>
+  <div class="min">
+  <button class="Back to Home"><a href="Home.html">Back to Home</a></button> <br><br><br>
+</div>
+</body>
+</html>
+
+
+
+
